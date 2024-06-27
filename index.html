@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>acd</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="public/style.css" />
+  </head>
+  <body>
+    <header class="container-fluid text-body-color bg-primary-subtle rounded-1">
+      <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading1">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading2">message</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              data-bs-toggle="dropdown"
+              href="#"
+              role="button"
+              aria-expanded="false"
+              >more</a
+            >
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="#scrollspyHeading3">products</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#scrollspyHeading4"
+                  >description</a
+                >
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a class="dropdown-item" href="#scrollspyHeading5">images</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main
+      class=""
+      data-bs-spy="scroll"
+      data-bs-target="#navbar-example2"
+      data-bs-root-margin="0px 0px -40%"
+      data-bs-smooth-scroll="true"
+      class="scrollspy-example bg-body-tertiary p-3 rounded-2"
+      tabindex="0"
+    >
+      <section class="container-sm section--audience container-fluid">
+        <h3 id="scrollspyHeading1">who we are</h3>
+        <p>
+          This is a company established to equip learners with the right
+          learning materials and resources
+        </p>
+      </section>
+
+      <section class="container-sm section--call-to-action">
+        <form>
+          <p id="scrollspyHeading2">Were just an email away...</p>
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              id="mailMessage"
+              class="form-control"
+              placeholder="Your message"
+              aria-label="user message"
+              aria-describedby="button-addon2"
+              required
+            />
+            <button
+              class="btn btn-outline-secondary"
+              type="button"
+              id="button-addon2"
+              onclick="sendMail()"
+            >
+              send
+            </button>
+          </div>
+        </form>
+      </section>
+      <section class="container-sm section--plans">
+        <ul class="list-group" id="scrollspyHeading3">
+          <li class="list-group-item active" aria-current="true">
+            We offfer the following
+          </li>
+          <li class="list-group-item">Books</li>
+          <li class="list-group-item">Pencils</li>
+          <li class="list-group-item">Online schoarstic resources</li>
+          <li class="list-group-item">Pens</li>
+        </ul>
+      </section>
+      <section
+        class="container-sm section--products-description"
+        id="scrollspyHeading4"
+      >
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseOne"
+                aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseOne"
+              >
+                Scolarstic materials
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseOne"
+              class="accordion-collapse collapse"
+            >
+              <div class="accordion-body">
+                <strong
+                  >Navigate our endless list of scholarstic materials.</strong
+                >
+                We sell materials such as books, mathematical and biological
+                sets, pens, pencils, rulers, bags, box files, and many others in
+                the category.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseTwo"
+                aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseTwo"
+              >
+                Online resources
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseTwo"
+              class="accordion-collapse collapse"
+            >
+              <div class="accordion-body">
+                <strong>We also offer free online study resources</strong> We
+                have a variety ranging from pdfs, text books, examination
+                questions, question banks, a vast collection of other resources
+                and an AI chatbot to help you with your research
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="gallery container-sm" id="scrollspyHeading5">
+        <h2 class="h2">A little bit from our collection</h2>
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./public/images/books.jpg"
+                class="d-block w-100"
+                alt="books"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./public/images/pens.jpg"
+                class="d-block w-100"
+                alt="pens on a book"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./public/images/rulers.jpg"
+                class="d-block w-100"
+                alt="rulers on a white background"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer class="container-fluid">
+      <p>
+        site by developer <a href="https://developerdavis.netlify.app">Davis</a>
+      </p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function sendMail() {
+        var link =
+          "mailto:kimdhev@gmail.com" +
+          "?cc=myCCaddress@example.com" +
+          "&subject=" +
+          escape("This is my subject") +
+          "&body=" +
+          escape(document.getElementById("mailMessage").value);
+        window.location.href = link;
+      }
+    </script>
+  </body>
+</html>

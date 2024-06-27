@@ -1,0 +1,50 @@
+body{
+    background-image: linear-gradient(#000a14bb, #000a14bb), url("images/globe.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 5;
+}
+main{
+    color: white;
+    & > section{
+        margin-block: 100px;
+    }
+}
+.gallery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.carousel{
+    width: min(100%, 500px);
+}
+.carousel button span{
+    background-color: #000a14bb;
+}
+.carousel-item{ 
+    width: 100%;
+    aspect-ratio: 1;
+    padding: 20px;
+    & > img{
+    border-radius: 10px;
+        height: 100%;
+        object-fit: cover;
+}
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #000a14bb;
+    color: #21476dbb;
+    padding-top: 10px;
+}
