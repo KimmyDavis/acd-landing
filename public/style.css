@@ -13,6 +13,7 @@ header{
     z-index: 5;
 }
 main{
+    margin-top: 100px;
     color: white;
     & > section{
         margin-block: 100px;
@@ -45,6 +46,6 @@ footer{
     bottom: 0;
     left: 0;
     background-color: #000a14bb;
-    color: #21476dbb;
+    color: #356ea8bb;
     padding-top: 10px;
 }
