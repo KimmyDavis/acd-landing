@@ -13,7 +13,7 @@ header{
     z-index: 5;
 }
 main{
-    margin-top: 100px;
+    margin-top: 150px;
     color: white;
     & > section{
         margin-block: 100px;
